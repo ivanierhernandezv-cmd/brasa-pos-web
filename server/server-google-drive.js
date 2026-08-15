@@ -27,6 +27,16 @@ let cachedData = {}; // Cache en memoria para evitar llamadas constantes
 
 async function initGoogleDrive() {
   try {
+    // Si existe GOOGLE_KEY_FILE_CONTENT (variable de entorno), crear el archivo
+    if (process.env.GOOGLE_KEY_FILE_CONTENT) {
+      const keyPath = './google-key.json';
+      try {
+        await fs.writeFile(keyPath, process.env.GOOGLE_KEY_FILE_CONTENT);
+      } catch (err) {
+        console.error('Error escribiendo google-key.json:', err.message);
+      }
+    }
+
     // Crear cliente de Google con credentials
     const auth = new google.auth.GoogleAuth({
       keyFile: process.env.GOOGLE_KEY_FILE || './google-key.json',
