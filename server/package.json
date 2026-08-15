@@ -4,8 +4,8 @@
   "description": "Full Track POS - Backend API for web version",
   "main": "server.js",
   "scripts": {
-    "start": "node server-google-drive.js",
-    "dev": "node server-google-drive.js"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
   "dependencies": {
     "express": "^4.18.2",
