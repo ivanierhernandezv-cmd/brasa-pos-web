@@ -1,5 +1,7 @@
 {
-  "dependencies": {
-    "googleapis": "^174.0.1"
+  "name": "brasa-pos-web",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "cd server && npm start"
   }
 }
