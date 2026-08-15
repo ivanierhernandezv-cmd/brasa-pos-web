@@ -1,29 +1,9 @@
-# Dependencies
+server/google-key.json
 node_modules/
-npm-debug.log
-yarn-error.log
-
-# Database
-data/
-*.db
-*.db-wal
-*.db-shm
-
-# Environment
 .env
-.env.local
-.env.*.local
-
-# OS
 .DS_Store
-Thumbs.db
-.vscode/
-.idea/
-
-# Build artifacts
+*.db
+data/
+.env.local
 dist/
 build/
-
-# Logs
-logs/
-*.log
