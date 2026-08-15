@@ -1,0 +1,386 @@
+/* ============================================================================
+   Full Track POS - Mobile-First Responsive CSS
+   Optimizado para móvil, tablet y desktop
+   ============================================================================ */
+
+/* Mejoras para MÓVIL */
+@media (max-width: 640px) {
+  /* Fonts más grandes en móvil para legibilidad */
+  body {
+    font-size: 16px; /* Evita zoom automático en iOS */
+  }
+
+  /* Botones más grandes para toque */
+  button, input, select, textarea, .tile {
+    min-height: 44px;
+    min-width: 44px;
+    font-size: 16px;
+    padding: 12px 16px;
+  }
+
+  /* POS Layout: Una columna en móvil */
+  .pos-layout {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .pos-products, .pos-order {
+    min-width: 100%;
+    min-height: auto;
+    max-height: 50vh;
+    overflow-y: auto;
+  }
+
+  /* Grid de productos: 2 columnas en móvil */
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  /* Modal más pequeño en móvil */
+  .modal-content {
+    width: 90vw;
+    max-width: 90vw;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 1rem;
+  }
+
+  /* Pills de mesa: una fila scrolleable */
+  .pill-wrap {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .pill {
+    flex-shrink: 0;
+    min-width: 80px;
+  }
+
+  /* Tabla más compacta */
+  table {
+    font-size: 13px;
+  }
+
+  th, td {
+    padding: 8px 4px;
+  }
+
+  /* Inputs más grandes */
+  input[type="text"],
+  input[type="number"],
+  input[type="tel"],
+  select {
+    font-size: 16px; /* Evita zoom en iOS */
+    padding: 12px;
+  }
+
+  /* Checkout modal: más space */
+  .pm-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  /* Cart items: más espacio */
+  .cart-item {
+    padding: 12px;
+    margin-bottom: 8px;
+  }
+
+  /* Totales más legibles */
+  #posTotalsWrap {
+    font-size: 14px;
+  }
+
+  #posTotalsWrap .total-row {
+    padding: 8px 0;
+  }
+
+  /* Hide desktop-only elements */
+  .desktop-only {
+    display: none;
+  }
+
+  /* Touch-friendly spacing */
+  .surface, .surface-2 {
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  /* Scroll sin barras feas */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--line);
+    border-radius: 3px;
+  }
+
+  /* Evita elementos flotantes */
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Teclado más limpio */
+  input:focus {
+    font-size: 16px;
+  }
+}
+
+/* TABLET (641px - 1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .pos-layout {
+    flex-direction: column;
+  }
+
+  .pos-products {
+    flex: 1;
+    min-height: 400px;
+  }
+
+  .pos-order {
+    flex: 1;
+    min-height: 300px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .modal-content {
+    width: 85vw;
+    max-width: 85vw;
+  }
+
+  button, input, select {
+    font-size: 16px;
+    padding: 10px 14px;
+    min-height: 40px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
+
+/* DESKTOP (1025px+) */
+@media (min-width: 1025px) {
+  .pos-layout {
+    flex-direction: row;
+  }
+
+  .pos-products {
+    flex: 3 1 0%;
+    min-height: 0;
+  }
+
+  .pos-order {
+    flex: 2 1 0%;
+    min-height: 0;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .modal-content {
+    width: 600px;
+    max-width: 80vw;
+  }
+
+  button, input, select {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  table {
+    font-size: 13px;
+  }
+
+  /* Show desktop-only elements */
+  .desktop-only {
+    display: block;
+  }
+
+  /* Hover effects en desktop */
+  .tile:hover {
+    transform: scale(1.02);
+    border-color: var(--red);
+  }
+
+  button:hover {
+    opacity: 0.9;
+  }
+}
+
+/* ORIENTACIÓN */
+@media (orientation: landscape) and (max-height: 600px) {
+  .pos-layout {
+    flex-direction: row;
+  }
+
+  .pos-products {
+    flex: 1;
+    max-height: 85vh;
+  }
+
+  .pos-order {
+    flex: 1;
+    max-height: 85vh;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* LANDSCAPE MÓVIL */
+@media (orientation: landscape) and (max-width: 900px) {
+  .modal-content {
+    max-height: 90vh;
+  }
+
+  .pos-products {
+    max-height: 80vh;
+  }
+
+  .pos-order {
+    max-height: 80vh;
+  }
+}
+
+/* TYPOGRAPHY RESPONSIVE */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .font-display {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .font-display {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .font-display {
+    font-size: 32px;
+  }
+}
+
+/* GRID RESPONSIVE GENERAL */
+.responsive-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (max-width: 640px) {
+  .responsive-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .responsive-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1025px) {
+  .responsive-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* FLEXBOX RESPONSIVE */
+.responsive-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.responsive-flex > * {
+  flex: 1 1 200px;
+  min-width: 150px;
+}
+
+@media (max-width: 640px) {
+  .responsive-flex > * {
+    flex: 1 1 100%;
+  }
+}
+
+/* SAFE AREA PARA NOTCHES (iPhoneX+) */
+@supports (padding: max(0px)) {
+  .modal-content {
+    padding-left: max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
+  }
+
+  body {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* PRINT RESPONSIVE */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  .modal {
+    display: none;
+  }
+
+  .pos-layout {
+    flex-direction: column;
+  }
+}

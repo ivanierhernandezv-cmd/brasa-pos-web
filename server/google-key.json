@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "food-track-pos",
+  "private_key_id": "d6dc1736f5652d4d39567ebcdbddf8bbe72490a0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCxwwvJ+FhRgoEr\ni6dkjyOAFu6UxDGL7KsEnFyJHm6DkI0ETAeZdLFO549nlvbJN7RrX1stbxGnYNRM\nF5goXhCLNYbJwtDoonP0y+bUb4mZ4zhxt1iDbCcuO/bfkOcY1McGlmGh7wHwt3HV\n3brFJhN4leWOv6vuIkxTcFX2XI9nDLZ/M+4Qv4d+dJHxHd6+kVITfuhHfQLrEr3i\np9SKRievZxLIOlRbkKOYgWb7XHQRPpIrSMQ9YvZSlvbWCvAIzz+XDBc/4D6EJDBU\nQWW6kbX0b9MEdj0cp6x/dXC/LTK4osz+lyZA89OpL+zOZECFndYdJykPVABLpb1Y\nW/QbSLdvAgMBAAECggEAFQsNZLc2S/k32FNRGWmLyXiC0sVCRkRZ3xMG2KFBHOhU\n6+V3itYnvTr9R2/gFA7jl/MIWfcJhHfFJKLbENWd02pJOVjgySvzWnnJgBbEwnJb\nDAnT0RmnA7qhLXMRCxKj4ubqH4op1SNU4afnbw+PA4SJ0chlOSysk2i7dw1wWRbo\nscHampWM4+Pu+DIdwKm7Pm2IK4tpzOjLJNljMKZko9N8yMp9ZU/7YfWVv7PXeuZ1\nlOnERDfA0blxbZrawwENSbiZG83HamopCOnj1TgK5Ny0AjlrMSzasLCxK1C/GR5l\nhLuFb7atZNkkoy68Cg+I/UX/a8k61P8vhewsBISCbQKBgQDmEVnQH9r7IU3yWfcU\nTB5Ekwe5hcWVRaHoKm/Tuc3pRFe2oHYImK5ZEelyC77nhAMxuaD0pFnrnQ99wZIr\nWMnR3F6YTjBOAh0D8951Mj2nh63lUyidQ4TcQK6DvyhfEWw8Ws+FGfYrLE7uwl+G\neHTwpbPK6kH85cozUee8q7gRVQKBgQDFzGYzjQa6okDgpW5dMx3lEbNNA0vYWXdp\nG/J3FkuOP5ZMr9QQBTUaVbmyAfKy0h8nSoDlPTmDkClxDIsDy2B0HFfRad4pZnNb\ndiPKbu91tGGAytLcKhw8InEMiNAOPqIfDBKSfPkZ2CYRTR2ghgsokVwPQqzVZbxq\nl27YbgY1swKBgQCbpSderv5loS1rhMOsPqbHe7ThJQf7qaUUPQl0cqJEapDwo3PW\n8vwYlA6bsiiP1faXQF8Mwtd2l8XwLPGnU6UNzglM/rCdRb69etGH9dpSKW9S0sSK\nSDBtFXE6/irgzhesaT81a8/ne01XJ7aacYmjeGa/I2ZLImZ9+65MLNwVFQKBgQCs\nfQ3XALGQibPn83vl3JDCVQg2LZyzg3mFeLCdtxyWZM8t+tsESXZAi+dO2zIJTQGL\n4wW6YwTHvSzWf+ium2l2d80BOsBY/BW2+bRGcS1zSKUKilUNV8+dhS9ujdRZx7bb\nOkzr3/3e0saHqecfOCV88B4G1M8hnQGNNpecN35EzwKBgFYDRaMQzqZAADxsW+s+\nKKVdB/Q4BRLqSu1rcfFbuHn+Nf4iVU5HNW3iHIq9PAFVn/ApyrDtAn/j0/rRE5u6\najy/C5zbMd5eSkJTT/zmDMZZ7Whpd9Qp6Yr/OHIowpS02BOyRbyHCpyRoqAJ6qzO\nrsAw772DRM/aavOjbZ+WH04A\n-----END PRIVATE KEY-----\n",
+  "client_email": "brasa-pos@food-track-pos.iam.gserviceaccount.com",
+  "client_id": "113242483224255137108",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/brasa-pos%40food-track-pos.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
