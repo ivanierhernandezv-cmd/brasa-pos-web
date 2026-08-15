@@ -2,6 +2,10 @@
   "name": "brasa-pos-web",
   "version": "1.0.0",
   "scripts": {
-    "start": "cd server && npm start"
+    "start": "cd server && npm start",
+    "postinstall": "cd server && npm install"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }
